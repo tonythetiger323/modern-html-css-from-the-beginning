@@ -6,7 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Grid Media Queries</title>
   <style>
-  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 1rem;
+    }
+
+    @media(max-width: 768px){
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 768px){
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
